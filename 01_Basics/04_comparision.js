@@ -6,10 +6,10 @@
 // console.log(2 != 1);
 
 
-//keep n mind that use always same types of datatypes to compare between them
-// console.log("2" > 1);
+//keep in mind that use always same types of datatypes to compare between them
+console.log("2" > 1);
 // it convert atomatically this number("2") into 2 then it compare
-// console.log("02" > 1);
+console.log("02" > 1);
 
 /* avoid this types of coding
 

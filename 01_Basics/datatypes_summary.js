@@ -21,53 +21,89 @@ function
 
 // primitive datatypes example
 
-const score = 100
-console.log(typeof score);
+// const score = 100
+// console.log(typeof score);
 
-const scoreValue = 100.3
-console.log(typeof scoreValue);
+// const scoreValue = 100.3
+// console.log(typeof scoreValue);
 
-const isLoggedIn = false
-console.log(typeof isLoggedIn);
+// const isLoggedIn = false
+// console.log(typeof isLoggedIn);
 
-// null typeof always object dikhata hai
-const outsideTemp = null
-console.log(typeof outsideTemp);
+// // null typeof always object dikhata hai
+// const outsideTemp = null
+// console.log(typeof outsideTemp);
 
-const Name = "Bharat"
-console.log(typeof Name);
+// const Name = "Bharat"
+// console.log(typeof Name);
 
-const id = Symbol('123')
-const id1 = Symbol('345')
-console.log(id === id1)
-console.log(typeof id);
+// const id = Symbol('123')
+// const id1 = Symbol('345')
+// console.log(id === id1)
+// console.log(typeof id);
 
-let emailId;
-console.log(typeof emailId);
+// let emailId;
+// console.log(typeof emailId);
 
-let emailId1 = undefined
-console.log(typeof emailId1);
+// let emailId1 = undefined
+// console.log(typeof emailId1);
 
-const bigNumber = 73472174619n
-console.log(typeof bigNumber);
+// const bigNumber = 73472174619n
+// console.log(typeof bigNumber);
 
 
 // NON PRIMITIVE DATA TYPES
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
-let myObj = {
-    name: "hitesh",
-    age: 22,
-}
+// const heros = ["shaktiman", "naagraj", "doga"];
+// let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
 
-const myFunction = function(){
-    console.log("Hello world");
-}
+// const myFunction = function(){
+//     console.log("Hello world");
+// }
 
-console.log(typeof  myFunction);
+// console.log(typeof  myFunction);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// ++++++++++++++++  MEMORY   ++++++++++++++++
+
+/* there are two types of memory 1) Stack memory 2) heap memory 
+primitive datatypes use stack memory  
+stacl memory create copy of varaible
+non primitive data types use heap memory 
+heap memory always give reference of varaible  */
+
+
+let myYoutubeName = "bharatbhushan2608"
+let anothername = myYoutubeName
+anothername = "sonayadav1109"
+
+console.log(myYoutubeName);
+console.log(anothername);
+
+let userOne = {
+    email : "bharatbhushan@gamil.com",
+    upi : "bharat@ybl"
+
+}
+
+let userTwo = userOne
+
+userTwo.email = "sona@gmail.com"
+
+console.log(userOne.email);
+console.log(userOne.email);
+
+
+
+
+
 
 
 
