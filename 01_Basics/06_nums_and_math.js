@@ -21,7 +21,7 @@ const vinatge = 1000000
 // console.log(Math.round(4.3)); // it roundoff
 // console.log(Math.round(4.6));
 // console.log(Math.ceil(4.1)); // point k badd jara sa v value jyda hua toh number increase kr jayega
-// console.log(Math.floor(4.6)); // point k baad kita v value hp jaye 4.9 ya 4.6 ya 4.1 ye 4 hi hoga
+// console.log(Math.floor(4.6)); // point k baad kita v value ho jaye 4.9 ya 4.6 ya 4.1 ye 4 hi hoga
 // console.log(Math.sqrt(25));
 // console.log(Math.tanh(23));
 // console.log(Math.min(4,5,6,3,2,6,4));

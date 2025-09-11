@@ -5,6 +5,8 @@
 // console.log(typeof score)
 // console.log(typeof (score))
 
+// coversion of string in number
+
 // let valueInNumber = Number(score)
 
 // console.log(typeof (valueInNumber))
@@ -14,7 +16,9 @@
 // let score1 = null
 // let valueInNumber1 = Number(score1)
 // console.log(score1)
+// console.log(typeof(score1))
 // console.log(valueInNumber1)
+// console.log(typeof valueInNumber1)
 
 
 // let score2 = undefined
@@ -32,13 +36,15 @@
 //    ture  = 1 ; false = 0
 
 
-let isLoggedIn = 1
-let booleanIsLoggedIn = Boolean(isLoggedIn)
+// let isLoggedIn = 1
+// let booleanIsLoggedIn = Boolean(isLoggedIn)
 // console.log(typeof (isLoggedIn));
 // console.log((booleanIsLoggedIn));
 
 let isLoggedIn1 = ""
 let booleanIsLoggedIn1 = Boolean(isLoggedIn1)
+// console.log(typeof (isLoggedIn1));
+// console.log((isLoggedIn1)); // it give blank output
 // console.log((booleanIsLoggedIn1));
 
 let isLoggedIn2 = "Bharat"
@@ -91,8 +97,8 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 gameCounter++;
-//++gameCounter;
-console.log(gameCounter);
+// ++gameCounter;
+// console.log(gameCounter);
 
 let gameCounter1 = 100
 ++gameCounter1;

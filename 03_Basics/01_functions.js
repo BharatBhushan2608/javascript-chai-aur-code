@@ -50,7 +50,7 @@ const operationResult = addTwoNumber_1(17,17)
 // console.log(loginUserMessage("bharat"));
 // console.log(loginUserMessage()); // if u cant pass any thing then it gives => undifined
 
-function loginUserMessage (userName = "bharat") {
+function loginUserMessage (userName ) {
     if(!userName){
         console.log("please enter your username") // agr tm chahte ho iske nice kuch n print ho toh return likh do
         return
@@ -72,9 +72,17 @@ function calculateCarPrice(val1 , val2 , ...nuumm1){ // ... yaha pe isko rest op
     return nuumm1
 
 }
-console.log(calculateCarPrice(2,3,4,5,6,7,3,2)); // ye sn ek array mein jake ekk saath print ho jayega
+console.log(calculateCarPrice(2,3,4,5,6,7,3,2)); // ye sb ek array mein jake ekk saath print ho jayega or val1 and val2 print nhi hoga kyuki return bs num hi kiye h
 
-// agr tum funstion mein val1 val2 parameters pass kr rhe ho toh jo v arguments ka pehla value hoga wo val1 me jayega or 2nd value val2 me jayega
+
+function calculateCarPrice(val1 , val2 , ...nuumm1){ // ... yaha pe isko rest operator bolte hai
+    return {val1,val2,nuumm1}  /// val1 and val2 yha pe return kiye toh ab print hoga
+
+}
+console.log(calculateCarPrice(2,3,4,5,6,7,3,2));  // output => { val1: 2, val2: 3, nuumm1: [ 4, 5, 6, 7, 3, 2 ] }
+
+
+// agr tum function mein val1 val2 parameters pass kr rhe ho toh jo v arguments ka pehla value hoga wo val1 me jayega or 2nd value val2 me jayega uske baad ka sara value ...nuumm1 mein jayega
 
 
 //object ko function me kasie pass kiya jata hai
@@ -95,6 +103,7 @@ handelObject({
 }) //direct yhi pe object pass kr do
 
 
+// array ko function mein kaise pass kre
 const myNewArr = [200, 9000, 7660]
 
 function returnSecondValue(getArray){

@@ -7,7 +7,7 @@ let age = 18
 let isLoggedIn = false
 
 /* Tpes of data types 
-numer => 2 to the power 53
+number => 2 to the power 53
 bigint => used in big numbers (stock market)
 string => example (let name = "bharat")
 boolean => ture ya false

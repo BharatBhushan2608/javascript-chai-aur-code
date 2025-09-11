@@ -52,7 +52,7 @@ if(true){
 
 //  technique to create function 
 
-addOne(5) // jb funtion aise define hoga toh usko hum uske upr b acces kr skte h 
+addOne(5) // jb funtion aise define hoga toh usko hum uske upr v acces kr skte h 
 function addOne(num){
     return num + 1
 }

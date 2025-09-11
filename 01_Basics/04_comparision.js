@@ -29,6 +29,7 @@ console.log(undefined < 0); //false
 
 // strictly check (===)
 console.log("2" === 2); //because datatypes of both is not same
+console.log(2 === 2); // true
 
 
 
