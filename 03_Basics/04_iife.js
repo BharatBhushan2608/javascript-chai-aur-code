@@ -1,6 +1,6 @@
 //  IMMEDIATELY INVOKED FUNCTION EXPRESSIONS (IIFE)
 
-// iife => global scope k pollution se problem hoti hai kai baar ton uske pollution or decleration ko htane k liye use krte iife
+//  iife => global scope k pollution se problem hoti hai kai baar ton uske pollution or decleration ko htane k liye use krte iife
 
 // named iife
 (function chai(){
