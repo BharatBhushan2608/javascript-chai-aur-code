@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT AND REMOVE ELEMENT IN DOM</title>
+</head>
+<body style="background-color: black;  color: white;">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+
+<script>
+    // how to add li into ul 
+    function addLanguage(langNmae){
+        document.createElement('li')
+        const li = document.createElement('li')
+        li.innerHTML = `${langNmae}` // isme innerHtml k karan ye phle pura list ko travere krega phir jake add krega
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addLanguage("python")
+    addLanguage("C++")
+
+    function addOptimiseLang (langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName)) // isme direct jake add ho jayega 
+        document.querySelector(".language").appendChild(li)
+
+    }
+    addOptimiseLang('golang')
+
+    // how edit any value
+    // 1st way
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML = "bharat"
+
+    // 2nd way
+    const FourthLang = document.querySelector("li:nth-child(4)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "Bhushan"
+    FourthLang.replaceWith(newLi)
+
+    // 3rd way
+
+    const firstLang = document.querySelector("li:nth-child(1)")
+    firstLang.outerHTML = "<li>TypeScript</li>"
+
+    // how to remove
+
+    const lastLang = document.querySelector('li:last-Child')
+    lastLang.remove()
+</script>
+
+</html>

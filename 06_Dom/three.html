@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how we create NodeList programetically</title>
+</head>
+<body style="background-color: black;  color: white;">
+    
+</body>
+<script>
+    document.createElement('div')
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    //div.id = "Bharat"
+    div.id = Math.round(Math.random() * 10  + 1)
+    div.setAttribute("title" , "generated title")
+    div.style.background = "green"
+    div.style.padding = "15px"
+    //div.innerText = "How are you brthr" // ye overwrite kr deta hai koiv andr text  likha hai toh bt yaha pe nya text daalna hai hmko
+    document.createTextNode("How are you bharat")
+    //hold this text node in a variable 
+    const addText = document.createTextNode("How are you Bharat Bhushan")
+    div.appendChild(addText)
+
+    // abhi tk jita kuch kiye ye show nhi ho rha hai html page pe
+    // ye krne se show ho jayega
+    document.body.appendChild(div)
+</script>
+</html>
