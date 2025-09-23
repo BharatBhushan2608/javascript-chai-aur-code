@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+nav {
+
+    width: 100vw;
+    height: 10vh;
+    background-color: antiquewhite;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+nav a{
+     
+    border: 2px solid rgb(207, 134, 98);
+    border-radius: 4px;
+    padding: 6px;
+    text-decoration: none;
+    color: rgb(111, 101, 101);
+
+}
+
+.bmiBox{
+    text-align: center;
+    padding: 30px;
+    
+}
+
+#result {
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 50px;
+  color: rgb(241, 241, 241);
+}
+
+#height{
+    margin-top: 20px;
+}
+
+#weight{
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 18px;
+    padding: 4px 10px 4px 10px;
+}
+
+form{
+    font-size: 20px;
+}
