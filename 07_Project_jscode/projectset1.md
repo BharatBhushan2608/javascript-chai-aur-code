@@ -1,7 +1,7 @@
 # Project Related to DOM
 
 ##Project link
-[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
+(https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 # Solution code
 
@@ -217,6 +217,167 @@ function  newGame() {
         
     })
 }
+
+
+```
+
+
+## project 5 --->   KEYBOARD
+
+```javaScript
+console.log("Bharat")
+
+ const insert = document.getElementById("insert");
+
+window.addEventListener("keydown", (e) => {
+  insert.innerHTML = `
+  <div class='color'> 
+    <table>
+        <tr>
+            <th>key</th>
+            <th>keycode</th>
+            <th>code</th>
+        </tr>
+        <tr>
+            <td>${e.key == ' ' ? 'space' : e.key }</td>
+            <td>${e.keyCode}</td>
+            <td>${e.code}</td>
+        </tr>
+         
+    </table>
+    </div>
+    `;
+    
+});
+
+
+```
+
+## project 6 --->    UNLIMITED COLOR
+
+```javaScript
+console.log("Bharat")
+
+// Generate a random color 
+
+const randomColor = function  ( ) {
+    const hex = '0123456789ABCDEF';
+    let color = '#';
+
+    for (let i = 0; i < 6; i++) {
+        color += hex[(Math.floor(Math.random() * 16))]
+        
+    }
+    return color
+};
+
+// console.log (randomColor()); // if u wnat see random color that u generate 
+
+let intervalid;
+const startChangingColor = function  ( ) {
+
+
+    if (!intervalid) {
+        intervalid = setInterval(chnageBgColor , 1000)
+    }
+     
+    function  chnageBgColor( ) {
+        document.body.style.backgroundColor = randomColor();
+        
+    } 
+}
+
+
+const stopChangingColor = function  ( ) {
+    clearInterval(intervalid);
+    intervalid = null;
+}
+
+document.querySelector('#start').addEventListener('click' , startChangingColor)
+
+
+document.querySelector('#stop').addEventListener('click' , stopChangingColor)
+
+
+
+
+
+```
+
+## project 7 --->   
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 8 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 9 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 10 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 11 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 12 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+## project 13 --->    
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+## project 14 --->   
+
+```javaScript
+console.log("Bharat")
+
+
+
+```
+
+## project 15 --->    
+
+```javaScript
+console.log("Bharat")
+
 
 
 ```
