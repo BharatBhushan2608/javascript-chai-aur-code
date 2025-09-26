@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hi Bharat Bhushan </h1>
+    <button id="stop">Done</button>
+</body>
+<script>
+
+    // setTimeout( function (){
+    //     console.log('bharat')
+    // },2000)
+
+    const sayBharat = function (){
+        console.log('bharat')
+    }
+
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = 'Best way to Learn Javascript'
+    } 
+
+     
+    // if u want stop the setTimeout function
+
+    const stopMe = setTimeout(changeText ,2000) // u just define it in varaible but it still work for changetext function
+
+    document.querySelector('#stop').addEventListener('click' , function () {
+        clearTimeout(stopMe)
+        console.log("STOPPED")
+        
+    }) // if u want stop the setTimeout function before 2000ms then click on stop button 
+
+</script>
+</html>
