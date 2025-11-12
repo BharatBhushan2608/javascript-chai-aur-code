@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th
+         {
+            border: 2px solid red;
+            text-align: center;
+             
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> 
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>State</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>UNSENT</td>
+            <td>Client has been created. open() not called yet.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>OPENED</td>
+            <td>open() has been called.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>HEADERS_RECEIVED</td>
+            <td>send() has been called, and headers and status are available.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>LOADING</td>
+            <td>Downloading; responseText holds partial data</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>DONE</td>
+            <td>The operation is complete.</td>
+        </tr>
+    </table>
+    </h1>
+</body>
+
+    <script>
+        const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+        const xhr = new XMLHttpRequest()
+         
+        xhr.open('GET' , requestUrl) //abhi tk open call nhi hua hai abhi bs request daale h 
+        xhr.onreadystatechange = function () {
+            console.log(xhr.readyState);
+
+            if (xhr.readyState === 4) {
+                console.log(this.responseText);
+                const data = JSON.parse(this.responseText)  
+                console.log(data)  
+                console.log('followers:- ' , data.followers)
+                
+
+            }
+        }
+        
+        xhr.send(); // ab open call ho gya hai
+        
+
+    </script>
+
+</html>
