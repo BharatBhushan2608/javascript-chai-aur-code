@@ -13,7 +13,7 @@ const gameName = new String('Bharat-Bhushan')
 // console.log(gameName[0])
 
 //accessing the prorotype
-console.log(gameName.__proto__);
+// console.log(gameName.__proto__);
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
@@ -21,10 +21,10 @@ console.log(gameName.__proto__);
 // console.log(gameName.indexOf('h'));
 
 //  const newString = gameName.substring(0,4) //  it give upto 3 index not include 4
-//  console.log(newString)
+//  console.log(newString);
 
- const anotherString = gameName.slice(-13, 4)
-//  console.log(anotherString);
+ const anotherString = gameName.slice(-10, 4)
+ //console.log(anotherString);
 
  const newStringOne = "     bharat     "
 //  console.log( newStringOne);

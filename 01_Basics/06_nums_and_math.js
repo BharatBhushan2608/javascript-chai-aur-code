@@ -7,10 +7,10 @@ const balance =  new Number(100) // it gives output like this [Number: 100]
 // console.log(balance.toFixed(2));  // it means that i convert number into decimal
 
 const otherNumber = 26.6666
-// console.log(otherNumber.toPrecision(4)); // it give focus on how many number that is given in precision
+//console.log(otherNumber.toPrecision(4)); // it give focus on how many number that is given in precision
 
 const vinatge = 1000000
-// console.log(vinatge.toLocaleString('en-IN'))
+//console.log(vinatge.toLocaleString('en-IN'))
 
 
 
@@ -27,16 +27,16 @@ const vinatge = 1000000
 // console.log(Math.min(4,5,6,3,2,6,4));
 // console.log(Math.max(4,5,6,3,2,6,4));
 
-console.log(Math.random()); // it give random value between 0 and 1
+//console.log(Math.random()); // it give random value between 0 and 1
 
-console.log((Math.random()*10) + 1);
-console.log(Math.floor(Math.random()*10) + 1);
+//console.log((Math.random()*10) + 1);
+//console.log(Math.floor(Math.random()*10) + 1);
 
 const min = 10
 const max = 20
 // kaise nikale is dono k beech ka value
 
-console.log(Math.floor(Math.random() * (max - min  + 1 ) + 10));
+//console.log(Math.floor(Math.random() * (max - min  + 1 ) + 10));
 
 
 

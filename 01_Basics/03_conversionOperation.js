@@ -1,6 +1,6 @@
         //CONVERSION OF DATATYPES
 
-// let score = "33abc"
+let score = "33abc"
 
 // console.log(typeof score)
 // console.log(typeof (score))
@@ -25,6 +25,8 @@
 // let valueInNumber2 = Number(score2)
 // console.log(score2);
 // console.log(valueInNumber2)
+// console.log(typeof score2);
+// console.log(typeof valueInNumber2);
 
 // let score3 = true
 // let valueInNumber3 = Number(score3)
@@ -39,6 +41,8 @@
 // let isLoggedIn = 1
 // let booleanIsLoggedIn = Boolean(isLoggedIn)
 // console.log(typeof (isLoggedIn));
+// console.log((isLoggedIn));
+// console.log(typeof (booleanIsLoggedIn));
 // console.log((booleanIsLoggedIn));
 
 let isLoggedIn1 = ""
@@ -69,7 +73,7 @@ let stringNumber  = String (someNumber)
 
 let value = 3
 let negValue = -value
-//console.log(negValue);
+// console.log(negValue);
 
 // console.log(2+2) ;
 // console.log(2-2) ;
@@ -78,8 +82,8 @@ let negValue = -value
 // console.log(2/3) ;
 // console.log(2%3) ;
 
-let str1 = "bharat"
-let str2 = "bhushan"
+// let str1 = "bharat"
+// let str2 = "bhushan"
 // console.log(str1 + str2);
 
 // console.log("1" + 2);
@@ -98,11 +102,13 @@ num1 = num2 = num3 = 2 + 2
 let gameCounter = 100
 gameCounter++;
 // ++gameCounter;
-// console.log(gameCounter);
+//console.log(gameCounter);
+
+//console.log(" ------------- ");
 
 let gameCounter1 = 100
 ++gameCounter1;
-console.log(gameCounter1);
+//console.log(gameCounter1);
 
 
 

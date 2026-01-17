@@ -6,7 +6,7 @@ let name = "bharat"
 let age = 18
 let isLoggedIn = false
 
-/* Tpes of data types 
+/* Types of data types 
 number => 2 to the power 53
 bigint => used in big numbers (stock market)
 string => example (let name = "bharat")
@@ -20,6 +20,7 @@ object
 */
 
 console.log(typeof "bharat")
+console.log(typeof isLoggedIn)
 console.log(typeof age)
 console.log(typeof null)  // type of null is object 
 console.log(typeof undefined) // typeof undefined is undefined
