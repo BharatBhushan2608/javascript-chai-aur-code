@@ -15,7 +15,7 @@ tinderUser.isLogggedIn = " false "
 
 tinder.id = " 123-Bharat"
 tinder.name = " Bhsuhan-Bharat"
-tinder.isLogggedIn = " false "
+tinder.isLogggedIn = "false"
 
 // console.log(tinder);
 
