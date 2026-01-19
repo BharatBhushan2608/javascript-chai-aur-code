@@ -32,7 +32,7 @@ function one(){
     two()
 
 }
-// one()
+//one()
 
 
 if(true){
@@ -42,10 +42,10 @@ if(true){
         const website = " youtube "
         //console.log(username + website);
     }
-   // console.log(website); // yev access nhi hoga
+   // console.log(website); // ye v access nhi hoga
     
 }
-//console.log(username); // ye v access nhi hoga
+// console.log(username); // ye v access nhi hoga 
 
 
 // +++++++++++++++++++++++++++ intresting ++++++++++++++++++++++++
@@ -58,10 +58,9 @@ function addOne(num){
 }
 
 
-// bt isme humisko upr access nhi kr skte hai kyu is function ko hum varaible k abdr daal diye hai 
+// bt isme hum isko upr access nhi kr skte hai kyu is function ko hum varaible k abdr daal diye hai 
 const addTwo = function(num){
     return num + 2
-
 }
 addTwo(5)
 
