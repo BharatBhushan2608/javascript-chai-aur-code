@@ -17,6 +17,7 @@ function sayMyName(){
 
 function addTwoNumbers (number1 ,number2){
     console.log(number1 + number2);
+
     
 }
 // addTwoNumbers()// it gives NaN
@@ -39,7 +40,7 @@ function addTwoNumber_1 (num1 , num2){
     
 }
 const operationResult = addTwoNumber_1(17,17)
-// console.log("result: " , operationResult)
+//console.log("result: " , operationResult)
 
 
 // function loginUserMessage (userName) {
@@ -48,7 +49,7 @@ const operationResult = addTwoNumber_1(17,17)
 // loginUserMessage("bharat") // isme hum log kahi print krne nhi bole output blank aayega
 
 // console.log(loginUserMessage("bharat"));
-// console.log(loginUserMessage()); // if u cant pass any thing then it gives => undifined
+// console.log(loginUserMessage()); // if u cant pass any thing then it gives => undifined at the place of username
 
 function loginUserMessage (userName ) {
     if(!userName){
@@ -72,17 +73,18 @@ function calculateCarPrice(val1 , val2 , ...nuumm1){ // ... yaha pe isko rest op
     return nuumm1
 
 }
-console.log(calculateCarPrice(2,3,4,5,6,7,3,2)); // ye sb ek array mein jake ekk saath print ho jayega or val1 and val2 print nhi hoga kyuki return bs num hi kiye h
+// console.log(calculateCarPrice(2,3,4,5,6,7,3,2)); // ye sb ek array mein jake ekk saath print ho jayega or val1 and val2 print nhi hoga kyuki return bs num hi kiye h
 
 
 function calculateCarPrice(val1 , val2 , ...nuumm1){ // ... yaha pe isko rest operator bolte hai
     return {val1,val2,nuumm1}  /// val1 and val2 yha pe return kiye toh ab print hoga
 
 }
-console.log(calculateCarPrice(2,3,4,5,6,7,3,2));  // output => { val1: 2, val2: 3, nuumm1: [ 4, 5, 6, 7, 3, 2 ] }
+//console.log(calculateCarPrice(2,3,4,5,6,7,3,2));  // output => { val1: 2, val2: 3, nuumm1: [ 4, 5, 6, 7, 3, 2 ] }
 
 
-// agr tum function mein val1 val2 parameters pass kr rhe ho toh jo v arguments ka pehla value hoga wo val1 me jayega or 2nd value val2 me jayega uske baad ka sara value ...nuumm1 mein jayega
+// agr tum function mein val1 val2 parameters pass kr rhe ho toh jo v arguments ka pehla value hoga wo val1 me jayega or
+//  2nd value val2 me jayega uske baad ka sara value ...nuumm1 mein jayega
 
 
 //object ko function me kasie pass kiya jata hai
@@ -93,7 +95,7 @@ const user = {
 }
 
 function handelObject(anyobject){
-    console.log(`username is ${anyobject.userName} and price is ${anyobject.price}`)
+    //console.log(`username is ${anyobject.userName} and price is ${anyobject.price}`)
 
 }
 //handelObject(user)
@@ -107,11 +109,12 @@ handelObject({
 const myNewArr = [200, 9000, 7660]
 
 function returnSecondValue(getArray){
-    return getArray[1]
+    return getArray // direct array return kr dega
+    // return getArray[1] // agr koi array ka value ko access krna hai toh aise kr skte hai
 
 }
-console.log(returnSecondValue(myNewArr));
-console.log(returnSecondValue([3,6,9])); // direct yhi pe array pass kr do
+// console.log(returnSecondValue(myNewArr));
+// console.log(returnSecondValue([3,6,9])); // direct yhi pe array pass kr do
 
 
 
